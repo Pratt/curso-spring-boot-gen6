@@ -1,0 +1,872 @@
+{
+	"info": {
+		"_postman_id": "716066ce-8b05-423b-a839-5f8a10135bbe",
+		"name": "Curso Spring Boot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "declaracion",
+			"item": [
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/declaracion/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"declaracion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tipoOperacion\": {\n        \"id\": 1\n    },\n    \"aduana\": {\n        \"id\": 2\n    },\n    \"cliente\": {\n        \"id\": 1\n    },\n    \"valorFactura\": 0,\n    \"valorFob\": 0,\n    \"valorFlete\": 0,\n    \"valorSeguro\": 0,\n    \"valorCif\": 0,\n    \"observacionBancoCentral\": \"OBSERVACIONES BCENTRAL\",\n    \"paisOrigen\": {\n        \"id\": 1\n    },\n    \"puertoOrigen\": {\n        \"id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/declaracion",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"declaracion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/declaracion/findAll",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"declaracion",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"tipoOperacion\": {\n        \"id\": 1\n    },\n    \"aduana\": {\n        \"id\": 2\n    },\n    \"cliente\": {\n        \"id\": 1\n    },\n    \"valorFactura\": 10,\n    \"valorFob\": 0,\n    \"valorFlete\": 0,\n    \"valorSeguro\": 0,\n    \"valorCif\": 0,\n    \"observacionBancoCentral\": \"OBS LALALA\",\n    \"paisOrigen\": {\n        \"id\": 1\n    },\n    \"puertoOrigen\": {\n        \"id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/declaracion",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"declaracion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/declaracion/6",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"declaracion",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "conItems (dto)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/declaracion/conItems/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"declaracion",
+								"conItems",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByCliente (dto)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/declaracion/findByCliente/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"declaracion",
+								"findByCliente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByTipoOperacion (dto)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/declaracion/findByTipoOperacion/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"declaracion",
+								"findByTipoOperacion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByPaisOrigen (dto)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/declaracion/findByPaisOrigen/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"declaracion",
+								"findByPaisOrigen",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByClienteAndPaisOrigen (dto)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/declaracion/findByClienteAndPaisOrigen/1/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"declaracion",
+								"findByClienteAndPaisOrigen",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByPartidaItem (dto)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/declaracion/findByPartidaItem/20103080",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"declaracion",
+								"findByPartidaItem",
+								"20103080"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByClienteAndPartidaItem (dto)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/declaracion/findByClienteAndPartidaItem/1/20103080",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"declaracion",
+								"findByClienteAndPartidaItem",
+								"1",
+								"20103080"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "aduana",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/aduana/findAll",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"aduana",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"SAN ANTONIO\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/aduana",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"aduana"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nombre\": \"VALPARAISO\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/aduana",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"aduana"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cliente",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cliente/findAll",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cliente",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"CLIENTE 2\",\n    \"rut\": 2,\n    \"dv\": \"7\",\n    \"direccion\": \"LA ESQUINA 22\",\n    \"telefono\": \"2222222\",\n    \"email\": \"contacto2@cliente2.cl\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/cliente",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cliente/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cliente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nombre\": \"CLIENTE 2.2\",\n    \"rut\": 2,\n    \"dv\": \"7\",\n    \"direccion\": \"LA ESQUINA 2.2\",\n    \"telefono\": \"22222(2)\",\n    \"email\": \"contacto2@cliente2.cl\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/cliente",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pais",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/pais/findAll",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"pais",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"OTRO PAÍS\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/pais",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"pais"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 5,\n    \"nombre\": \"OTRO PAÍS AAA\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/pais",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"pais"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "puerto",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/puerto/findAll",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"puerto",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"OTRO PUERTO\",\n    \"pais\": {\n        \"id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/puerto",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"puerto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 4,\n    \"nombre\": \"OTRO PUERTO BBB\",\n    \"pais\": {\n        \"id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/puerto",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"puerto"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "tipoOperacion",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/tipoOperacion/findAll",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"tipoOperacion",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"OTRA OPERACIÓN\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/tipoOperacion",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"tipoOperacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 4,\n    \"nombre\": \"OTRA OPERACIÓN CCC\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/tipoOperacion",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"tipoOperacion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "item",
+			"item": [
+				{
+					"name": "findAllByDeclaracion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/item/findAllByDeclaracion/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"item",
+								"findAllByDeclaracion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"declaracion\": {\n        \"id\": 1\n    },\n    \"nroItem\": 1,\n    \"nombreMercancia\": \"JUGUETES\",\n    \"partidaArancelaria\": \"20103080\",\n    \"valorFactura\": 0,\n    \"kilosBrutos\": 0,\n    \"observaciones\": [\n        {\n            \"codigo\": 30,\n            \"valor\": \"obsssss2\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/item",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"declaracion\": {\n        \"id\": 1\n    },\n    \"nroItem\": 1,\n    \"nombreMercancia\": \"JUGUETES\",\n    \"partidaArancelaria\": \"20103080\",\n    \"valorFactura\": 0,\n    \"kilosBrutos\": 0,\n    \"observaciones\": [\n        {\n            \"id\": 3,\n            \"codigo\": 211,\n            \"valor\": \"obs11\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/item",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"item"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "xEwCjH5gfNuPA9kW",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "mgarciabackendapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/oauth/token",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CORS",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/declaracion/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"declaracion",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api-docs",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/v2/api-docs",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"v2",
+						"api-docs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swagger-ui",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/swagger-ui.html",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"swagger-ui.html"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiY29kZXJlc291cmNlaWQiXSwiZXhwIjoxNjIyODY0MjUwLCJ1c2VyX25hbWUiOiJhZG1pbiIsImp0aSI6IjlkZDMyZjYwLTQ2NWQtNGI5NS04OWEzLWU5MTA2OTgxMjZlMSIsImNsaWVudF9pZCI6Im1nYXJjaWFiYWNrZW5kYXBwIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl19.m3a968X1pqSzC0_7ALoB0KkV5vjuroqTu7K5PAkUthQ",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:8080"
+		}
+	]
+}

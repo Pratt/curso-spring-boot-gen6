@@ -1,0 +1,4 @@
+/* usuario admin, clave 123 */
+insert into usuario (username, password) values ('admin', '$2y$12$a0OOMjc8bg0F2hjoD91S.eCg4N/98KPSr4Bp3wkR5ykSkyeDdg4tK');
+
+insert into aduana (nombre) values ('VALPARAISO');
